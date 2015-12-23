@@ -1,0 +1,12 @@
+<section data-ng-controller="MainController">
+    Main
+    <section data-ng-repeat="salary in salaryList">
+        {{salary.brutto | number: 2}}
+        | {{salary.netto | number: 2}}
+        | {{salary.retiringContribution | number: 2}}
+        | {{salary.rentContribution | number: 2}}
+        | {{salary.illnessContribution | number: 2}}
+        | {{salary.healthContribution | number: 2}}
+        | {{salary.taxContribution | number: 2}}
+    </section>
+</section>

@@ -1,0 +1,23 @@
+<section data-ng-controller="TestController">
+    Test
+
+    <input type="number" data-ng-model="base" placeholder="Base..."/>
+    <!--<input type="number" data-ng-model="pay.x" placeholder="x..."/>-->
+    <!--<input type="number" data-ng-model="pay.equalization" placeholder="equalization..."/>-->
+    <!--<input type="number" data-ng-model="pay.overtime" placeholder="overtime..."/>-->
+    <!--<input type="number" data-ng-model="pay.bonus" placeholder="bonus..."/>-->
+    <!--<input type="number" data-ng-model="pay.leave" placeholder="leave..."/>-->
+    <!--<input type="number" data-ng-model="pay.healthLeave" placeholder="healthLeave..."/>-->
+    <!--<input type="number" data-ng-model="pay.benefit" placeholder="benefit..."/>-->
+    <!--<input type="number" data-ng-model="pay.medicalCare" placeholder="medicalCare..."/>-->
+    <!--<input type="number" data-ng-model="pay.insurance" placeholder="insurance..."/>-->
+    <section data-ng-model="salary">
+        {{salary.brutto | number: 2}}
+        | {{salary.netto | number: 2}}
+        | {{salary.retiringContribution | number: 2}}
+        | {{salary.rentContribution | number: 2}}
+        | {{salary.illnessContribution | number: 2}}
+        | {{salary.healthContribution | number: 2}}
+        | {{salary.taxContribution | number: 2}}
+    </section>
+</section>
