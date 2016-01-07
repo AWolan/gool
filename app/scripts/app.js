@@ -12,8 +12,7 @@ angular
     .module('app', [
         'ngRoute',
         'app.menu',
-        'app.main',
-        'app.test'
+        'app.main'
     ])
     .config(function ($routeProvider) {
         $routeProvider
@@ -21,22 +20,18 @@ angular
                 templateUrl: 'views/main.html',
                 controller: 'MainController'
             })
-            .when('/test', {
-                templateUrl: 'views/test.html',
-                controller: 'TestController'
-            })
-            .when('/list', {
-                templateUrl: 'views/list.html',
-                controller: 'ListController'
-            })
-            .when('/tree', {
-                templateUrl: 'views/tree.html',
-                controller: 'TreeController'
-            })
-            .when('/edit', {
-                templateUrl: 'views/edit.html',
-                controller: 'EditController'
-            })
+//            .when('/list', {
+//                templateUrl: 'views/list.html',
+//                controller: 'ListController'
+//            })
+//            .when('/tree', {
+//                templateUrl: 'views/tree.html',
+//                controller: 'TreeController'
+//            })
+//            .when('/edit', {
+//                templateUrl: 'views/edit.html',
+//                controller: 'EditController'
+//            })
             .otherwise({
                 redirectTo: '/'
             });

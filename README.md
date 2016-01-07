@@ -4,7 +4,7 @@
 
 ## Build & development
 
-Run `gulp` for building and `grunt serve` for preview.
+Run `gulp` for building and `gulp serve` for preview.
 
 ## Testing
 
